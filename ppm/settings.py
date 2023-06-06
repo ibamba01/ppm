@@ -26,9 +26,9 @@ SECRET_KEY = "django-insecure-faldrm$6tbl0l6zu^l$fols4u-*4u^i3b&uce7vi8041nex68x
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ["https://web-production-6e14.up.railway.app/"]
-CSRF_ALLOWED_ORIGINS = ["https://web-production-6e14.up.railway.app/"]
-CSRF_COOKIE_DOMAIN = ["https://web-production-6e14.up.railway.app/"]
+CSRF_TRUSTED_ORIGINS = ["https://web-production-6e14.up.railway.app"]
+CSRF_ALLOWED_ORIGINS = ["https://web-production-6e14.up.railway.app"]
+CSRF_COOKIE_DOMAIN = ["https://web-production-6e14.up.railway.app"]
 
 
 
