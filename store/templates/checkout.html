@@ -1,0 +1,23 @@
+{% extends "core/base.html"%}
+
+
+
+{% block title %}
+Checkout
+{% endblock %}
+
+{% block content %}
+    <div class="mb-7 text-2xl ">Riepilogo:</div>
+    <br>
+    <div class="text-xl text-gray-500">Costo Totale: ${{ cart.get_total_cost }}</div>
+
+    <form method="post" action=".">
+
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="checkoutbtn"><button>Checkout</button></div>
+    </form>
+
+
+
+{% endblock %}

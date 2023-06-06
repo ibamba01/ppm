@@ -1,0 +1,12 @@
+{% extends "core/base.html" %}
+
+{% block title %}my account{% endblock %}
+{% block content %}
+    <button class="carrello"> <a href="{% url "cart_view" %}">vai al carrello</a></button>
+
+   <button type="button" class="btn btn-outline-secondary"> <a href="{% url "ordini" %}">vai agli ordini</a> </button>
+
+    <hr class="p-5">
+   <button class="logout"> <a href="{% url "logout" %}" >log out</a> </button>
+
+{% endblock %}

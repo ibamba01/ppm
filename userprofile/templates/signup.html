@@ -1,0 +1,18 @@
+{% extends "core/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Sign UP{% endblock %}
+
+
+{% block content %}
+    <h1 class="text-2xl">Sign Up</h1>
+    <form method="post">
+        {% csrf_token %}  <!--this is a security feature fa in modo che Django non accetti richieste da siti esterni-->
+
+        {{ form.as_p }}
+        <button class="py-4 px-8 bg-teal-800 text-white">Continua</button>
+
+    </form>
+    <p>hai già un account? <a href="{% url "login" %}">entra</a></p>
+{% endblock %}
+

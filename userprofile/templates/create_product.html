@@ -1,0 +1,13 @@
+{% extends "core/base.html" %}
+
+{% block title %}my store{% endblock %}
+{% block content %}
+    <h1 class="text-2xl">Add product page</h1>
+
+    <form method="post" action="." enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+        <button class="text-white bg-blue-400  hover:bg-teal-800">Add product</button>
+    </form>
+{% endblock %}
