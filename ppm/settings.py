@@ -26,6 +26,7 @@ SECRET_KEY = "django-insecure-faldrm$6tbl0l6zu^l$fols4u-*4u^i3b&uce7vi8041nex68x
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ["https://elaboratodjango-production.up.railway.app"]
 
 LOGIN_URL = "login"  # reindirizza l'utente verso la pagina login QUANDO NON è LOGGATO
 LOGIN_REDIRECT_URL = "frontpage"  # reindirizza l'utente verso la pagina frontpage QUANDO FA IL LOGIN
